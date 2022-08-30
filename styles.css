@@ -71,6 +71,7 @@ html, body {
 
 .nav-item a {
     text-decoration: none;
+    font-weight: 600;
     color: white;
 }
 
@@ -442,13 +443,6 @@ svg:hover path{
     }
 
     .cherry, .orange { padding: 100% 10% 10px;}
-
-    .nav-list {
-        width: 300px !important;
-        height: 300px !important;
-        top: 90% !important;
-        left:10% !important;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -483,15 +477,15 @@ svg:hover path{
 
     .nav-list { 
         display: none;
-        width: auto;
         position: absolute;
         flex-direction: column;
         background-color: #FFFBF8;
-        top: 70%;
-        left: 20%;
-        /* transform: translate(-50%, -135%); */
-        width: 400px;
+        top: 5.5rem;
+        left: 0;
+        right: 0;
+        width: min(100% - 3rem, 30rem);
         height: 300px;
+        margin-inline: auto;
     }
 
     .triangle {
